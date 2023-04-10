@@ -1,6 +1,6 @@
 $("#formValidation").validate({
     rules:{
-        name:{
+        Vorname:{
             minlength: 2
         },
         email:{
