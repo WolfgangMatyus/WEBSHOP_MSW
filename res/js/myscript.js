@@ -1,3 +1,6 @@
+//-----REGISTRATION--------//
+
+    //VALIDATION: https://jqueryvalidation.org/
 $("#formValidation").validate({
     rules:{
         Anrede:{
@@ -53,3 +56,11 @@ $("#formValidation").validate({
       form.submit();
     }
    });
+
+   $.ajax({
+    type: "POST",
+    url: url,
+    data: data,
+    success: success,
+    dataType: dataType
+  });
